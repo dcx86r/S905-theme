@@ -1,0 +1,30 @@
+mod4 + Return
+	st
+
+mod4 + b
+	chwb -c 0xFBBAFF -s 10 $(pfw)
+
+mod4 + shift + {1,2,3,4}
+	sh ~/scripts/focus.sh {1,2,3,4}
+	
+mod4 + c
+	sh ~/scripts/wmcntr.sh
+
+mod4 + p
+	wmp -a $(wattr w $(lsw -r)) 0
+
+mod4 + shift + {h,j,k,l}
+	wmv {-40 0, 0 -40, 0 +40, +40 0} $(pfw)
+
+mod4 + ctrl + {h,j,k,l}
+	wmv {-10 0, 0 -10, 0 +10, +10 0} $(pfw)
+
+mod4 + alt + {h,j,k,l}
+	wmv {-1 0, 0 -1, 0 +1, +1 0} $(pfw)
+
+mod4 + ctrl + shift + {h,j,k,l}
+	wrs {-10 0, 0 -10, 0 +10, +10 0} $(pfw)
+
+mod4 + shift + s
+	scrot -q 75 ~/scrnsht.png
+
